@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Веб-технологии</title>
+    <nav class="background-color-dark">
+        <ul class="flex-menu">
+            <li class="HLogo">
+                    <a href="index.html"><img src="../gif/im1.jpg"width="90px"  alt=""></a>
+            </li>
+            <li class="menuElement LiElement">
+                <a href="main.html">О себе</a>
+            </li>
+            <li class="menuElement LiElement">
+                <a href="rezume.html">Резюме</a>
+            </li>
+            <li class="menuElement LiElement">
+                <a href="portfolio.html">Портфолио</a>
+            </li>
+            <li class="menuElement LiElement">
+                <a href="competencii.html">Компетенции</a>
+            </li>
+            <li class="menuElement LiElement">
+                <a href="contact.html">Контакты</a>
+            </li>
+            <li class="menuElement LiElement">
+                <a href="zadaniejs.html">Задание Джава</a>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Веб - технологии</h1>
+        <h3 class="header-title">Университет "Дубна"</h3>
+    </header>
+   
+    <style type="text/css">
+    .noselect {
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -webkit-touch-callout: none;   
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+        -khtml-user-select: none;
+    }
+    </style>
+</head>
+<body>
+    <main>
+    <div class="container" id="container">
+        <div class="item">
+                <div>
+                    corn soko
+                </div>  
+                <div>
+                    <input type="text" id = "count">
+                    <button onClick="Butcl()">Button</button>
+                    <button onClick="Butcl1()">Button1</button>
+                    <div id="textFields">
+    
+                    </div>
+                    <canvas id="squareCanvas" width="600" height="350"
+                        style="border:5px solid #885731;">
+                    </canvas>
+                </div>               
+        </div>
+        <div class="item">
+            <div>
+                <h1 class="noselect">Заголовок</h1>
+                <div class="noselect">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure minus recusandae facere ratione 
+                    aperiam quibusdam alias odit deleniti reprehenderit in incidunt qui amet magnam, repudiandae 
+                    neque suscipit aliquid provident doloremque?
+                </div>
+            </div>
+            <div>
+                <img src="../gif/macbook screensavers_  julia k crist.png" width="500px" alt="">
+            </div>
+        </div>
+        <div class="item">
+            <textarea id = "textArea"></textarea>>
+            <button>Button</button>
+            <p id="values"></p></div>
+        <div class="item">
+            endive gumbo gourd
+        </div>
+        <div class="item">
+            <div style="text-align: center;">
+                <img src="../gif/gif1.jpg" width="200px">
+            </div>
+            <div class=" flex-row-div">
+                <div>
+                    <img src="../gif/gif1.jpg" width="145px" onclick = f(3) ></a>
+                </div>
+                <div>
+                    <img src="../gif/gif2.jpg" width="145px" onclick = f(4) ></a>
+                </div>
+                <div>
+                    <img src="../gif/gif3.jpg" width="145px" onclick = f(5) ></a>
+                </div> 
+            </div>
+            <button onclick=f2>Button</button>
+        </div>
+        
+        <div class="item">
+            <P></P>
+            <form action="javascript:f()" method="get" name = "ex_form" id="render_ex_form">
+            <div class="divborder p1" >
+                <div>
+                    <div>Как Вам удобно получить ответ:</div>
+                    <label for="c_mail"><input type="radio" name="com_tion" id="c_mail" onclick = f1()> по почте </label><br>
+                    <label for="c_tel"><input type="radio" name="com_tion" id="c_tel" onclick = f1()> по телефону</label><br>
+                    <label for="c_none"><input type="radio" name="com_tion" id="c_none" onclick = f1() checked> не нужно отвечать</label><br>
+                </div>
+                <div>
+                    <label for="theme">
+                    Укажите тему вопроса
+                    </label><br>
+                    <select name="theme" id="theme" class="divnew">
+                        <option value="work">работа</option>
+                        <option value="cooperation">сотрудничество</option>
+                        <option value="personal">личное</option>
+                    </select>
+                </div>                
+                <div>
+                    <div class="flex-row-div">
+                        <label for="example">Ваше имя</label>
+                        <input  class="divnew" type="text"name="example"id="example"size="30"pattern="[A-Z]+"required>
+                    </div>
+                    <div class="flex-row-div hidden" id="email">
+                        <label for="email">Адрес почты</label>
+                        <input  class="divnew" type="email" name="email" >
+                    </div>
+                    <div class="flex-row-div hidden" id="tel">
+                        <label for="tel">Телефон</label>
+                        <input  class="divnew" type="tel" name="tel" >
+                    </div>
+                    <div>Ваш вопрос:</div>
+                    <div>
+                    <textarea cols="20"></textarea>
+                    </div>
+                </div>
+                <div>
+                    Пол<br>
+                    <label for="gender_m"><input type="radio" id="gender_m" name="gender" value="m" checked>Мужской</label><br>
+                    <label for="gender_w"><input type="radio" id="gender_w" name="gender" value="w" checked>Женский</label><br>
+                </div>
+                <div>
+                    <select name="city">Укажите город
+                        <option value="Dubna">Дубна</option>
+                        <option value="Moskva">Москва</option>
+                        <option value="Ufa">Уфа</option>
+                    </select>
+                    <br>
+                </div>
+                <div>
+                    <button id="render_birthday">Укажите дату рождения</button>
+                    <br>
+                    <div id="form_birthday"></div>
+                </div>
+                <div>
+                    <label for="mailing">Подписаться на рассылку</label>
+                    <input type="checkbox" id="mailing" name="mailing" value="mailing_true" checked>                
+                </div>
+            <input type="submit" value="отправить вопрос"  class="divnew margint">
+        </form></div>     
+      </div>
+    </main>  
+    <footer class="flex-row-div">
+        <div>
+            <a href=""><img src="../gif/vk.jpg" width="50px" height="50px" alt=""></a>
+            <a href=""><img src="../gif/git.jpg" width="50px" height="50px" alt=""></a>
+            <a href=""><img src="../gif/ins.jpg" width="50px" height="50px" alt=""></a>
+        </div>
+        <p>Cайт разработан ФИ, Copyright © 2021</p>
+        </footer> 
+</body> 
+    <script>
+        //const textarea = document.querySelector('textarea');
+        //const log = document.getElementById('values');
+        //textarea.addEventListener("input", updateValue);
+        //function updateValue(e) {
+        //    log.textContent = e.target.value;
+        //}
+        document.getElementById("textArea").oninput=function(){
+            localStorage.setItem('save', document.getElementById('textArea').value);
+            console.log(localStorage.getItem('save'));
+        }
+        document.getElementById('textArea').value = localStorage.getItem('save');
+        //document.getElementById("textArea").onchange=function(){alert("change")}
+        //document.getElementById("textArea").onkeypress=function(){alert("keypress")}
+        function f(a){
+            document.images[2].src = document.images[a].src;
+        }   
+        function f1()
+    {
+        if(document.ex_form.com_tion[0].checked){
+            document.getElementById("email").classList.remove("hidden"); 
+            document.getElementById("tel").classList.remove("vidable");                        
+            document.getElementById("tel").classList.add("hidden");
+            document.getElementById("email").classList.add("visable"); 
+        }
+        else if(document.ex_form.com_tion[1].checked){
+            document.getElementById("tel").classList.remove("hidden");
+            document.getElementById("email").classList.remove("visable");
+            document.getElementById("email").classList.add("hidden");   
+            document.getElementById("tel").classList.add("visable"); 
+        }
+        else{
+            document.getElementById("tel").classList.remove("visable");
+            document.getElementById("email").classList.remove("visable"); 
+            document.getElementById("email").classList.add("hidden");
+            document.getElementById("tel").classList.add("hidden");
+        }
+    }  
+    function Butcl(){
+        let ar=[];
+        count = document.getElementById("count").value;
+        for(i = 0; i < count; i++){
+            tf = document.createElement("input");
+            tf.type = "text";
+            tf.className="tf";
+            ar.push(tf);
+            document.getElementById("textFields").appendChild(tf);
+        }
+    }
+
+    function Butcl1(){   
+    for(i = 0; i < count; i ++){
+        count = document.getElementById("count").value;
+        let art = document.getElementById("squareCanvas");
+        let g = art.getContext("2d");
+        r = 25;
+        g.fillRect(10 + r, 10, 50, 50);
+        r += 55;
+    }
+    }
+    function f2()
+{
+document.images[2].src = document.images[a].src;
+document.images[a].classList.toggle("b");
+if(a!=2){
+document.images[a-1].classList.toggle("b");
+}
+else{
+if(document.images[3].classList.contains('b')){
+document.images[3].classList.toggle("b");
+}
+}
+if(a==3){
+a=2;
+}
+a=a+1;
+id = setTimeout("f2()", 1000);
+
+
+}
+    
+    </script>  
+</body>
+</html>
